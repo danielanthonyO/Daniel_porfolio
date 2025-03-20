@@ -1,0 +1,20 @@
+.header{
+    background-color: red;
+    max-height: 75px;
+}
+body {
+    background-color: azure;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+      "header header "
+      "sidebar main"
+      "footer footer";
+  }
+  
+  .header { grid-area: header; }
+  .sidebar { grid-area: sidebar; }
+  .main { grid-area: main; }
+  .footer { grid-area: footer; }
