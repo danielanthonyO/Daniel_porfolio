@@ -4,46 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Professional Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- <div id="header"> **************-->
-    <!-- ******************************** -->
-        <header class="header" id="header">
-        <div class="container">
-            <nav>
-            <img src="images/logo2.png" class="logo" alt="">
-            <ul id="sideMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li class=""><a href="">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button id="theme-toggle" class="theme-btn">
-                    <i class="fas fa-moon"></i> Dark Mode
-                </button>
-                
-                <i class="fas fa-times" onclick="closeMenu()" id="menu-close"></i>
+<!-- header ********************************************** -->
+    <header class="header" id="header">
+        <nav>
+            <div class="logo"><h2>LOGO</h2></div>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fa-solid fa-moon"></i>
+            </div>
+            <ul class="menuList">
+                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <i class="fas fa-bars" onclick="openMenu()" id="menu-bars"></i>
+            <div class="menu-bars">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
         </nav>
-            <div class="header-text">
-                <h2>Frontend <br><span>Developer </span>& Mentor</h2>
-                    <p>I design and code beautifully simple things, and I love what I do.</p>
-                    <!-- <a href=""><button class="btn2">Read More ...</button></a> -->
-                    <a href="#" class="btn2" id="openModal">See More</a>
-                </div>
-        </div>
-                <!-- Modal Structure -->
+
+
+<!-- /*Hero Section **********************************/ -->
+<div class="hero">
+    <div>
+        <h1>Frontend <br><span>Developer</span> & Mentor</h1>
+    </div>
+    <div>
+        <p>I design and code beautifully simple things, and I love what I do.</p>
+    </div>
+    <div class="btn-container">
+        <a href="#" class="btn2" id="openModal">Read more</a>
+    </div>
+</div>
+
+<!-- Modal Structure -->
 <div id="modalOverlay" class="modal-overlay">
     <div class="modal">
         <span class="close-btn">&times;</span>
         <h2>More Projects</h2>
-        <p>This is the modal content where you can display additional projects or information.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate officiis vitae consequatur iusto voluptates odit facere, temporibus! Dicta libero quam iste accusantium fugiat incidunt temporibus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi unde ipsam molestias dignissimos? Dolores, illum suscipit eos vitae consectetur. Nisi id sint pariatur in autem delectus numquam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo aut officiis magni, laudantium esse corporis laborum, eos molestias at explicabo alias obcaecati nulla? Omnis sint ab consectetur.</p>
     </div>
 </div>
 </header>
+
+
 
 <!-- <div id="about"> **********************-->
     <!-- About*************************** -->
@@ -69,112 +81,7 @@
         </div>
     </div>
 </section>
-
-
 <!-- ***************************************** -->
-<!-- text ****************************** -->
-<main>
-    <section id="first-text">
-        <div class="container">
-            <h2>Who am I</h2>
-            <div class="row">
-                <div class="about-left1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, nihil commodi dolore temporibus voluptatibus, animi minus, alias aliquam consectetur sint debitis quam cupiditate aspernatur dolores adipisci obcaecati quaerat incidunt porro?</p>
-                </div>
-                <div class="about-right1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum sapiente est. Debitis aliquam ullam voluptatum accusamus aut impedit architecto temporibus labore vero tempora? Necessitatibus illum alias provident autem quasi. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-<!-- skills session *************** --> 
-<!-- ******************************** -->
-        <div id="skills">
-            <div id="skills-line">
-                <span class="blue-line"></span>   
-                <span class="blue-line-heading">Core Skills</span>
-            </div>
-
-            <div id="wrapper">
-            <div class="skills-category">
-                <div class="image-section">
-                    <img src="images/g1.png" alt="">
-                    </div>
-                    <div class="desc-section">
-                        <span class="category-type">HTML</span>
-                        <span class="category-number">90%</span>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <div class="image-section">
-                        <img src="images/g2.png" alt="">
-                    </div>
-                    <div class="desc-section">
-                        <span class="category-type">CSS</span>
-                        <span class="category-number">70%</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <div class="image-section">
-                        <img src="images/g1.png" alt="">
-                    </div>
-                    <div class="desc-section">
-                        <span class="category-type">JS</span>
-                        <span class="category-number">60%</span>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <div class="image-section">
-                        <img src="images/g1.png" alt="">
-                    </div>
-                    <div class="desc-section">
-                        <span class="category-type">PHP</span>
-                        <span class="category-number">60%</span>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <div class="image-section">
-                        <img src="images/g1.png" alt="">
-                    </div>
-                    <div class="desc-section">
-                        <span class="category-type">REACT</span>
-                        <span class="category-number">60%</span>
-                    </div>
-                </div>
-
-                <div class="skills-category">
-                    <div class="image-section">
-                        <img src="images/g1.png" alt="">
-                    </div>
-                    <div class="desc-section">
-                        <span class="category-type">MYSQL</span>
-                        <span class="category-number">80%</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- ************************************* -->
-
-
-
-
-
-
-        <!-- paragraph ******************* -->
-        <section id="paragraph">
-            <div class="container">
-                <h2>My Experience</h2>
-                <p></p>
-                <p>I have good understanding of end development and 4 years experience in Software testing and automation, I have tested different types of applications. I worked in Glaston for 15 months, designing test plans, strategy and testcases, I helped them analysing requirement and executing testing activities.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam autem reprehenderit at eum dolorum in quisquam, corrupti repudiandae optio dolores voluptas odio accusantium dignissimos illo repellendus totam assumenda?</p>
-            </div>
-        </section>
-
 
 
 
@@ -217,7 +124,122 @@
     </div>
     </section>
 
+    <section class="cards-section">
+        <div class="card">
+            <img src="pancake.png" alt="Project 1">
+            <div class="card-content">
+                <h3>Pancake</h3>
+                <p>Brief description of the project goes here.</p>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pancake.png" alt="Project 2">
+            <div class="card-content">
+                <h3>Little zoo</h3>
+                <p>Brief description of the project goes here.</p>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="pancake.png" alt="Project 3">
+            <div class="card-content">
+                <h3>Project Three</h3>
+                <p>Brief description of the project goes here.</p>
+                <button>See More</button>
+            </div>
+        </div>
 
+    </section>
+
+
+
+<!-- skills session *************** --> 
+<!-- ******************************** -->
+<div id="skills">
+    <div id="skills-line">
+        <span class="blue-line"></span>   
+        <span class="blue-line-heading">Core Skills</span>
+    </div>
+
+    <div id="wrapper">
+    <div class="skills-category">
+        <div class="image-section">
+            <img src="images/g1.png" alt="">
+            </div>
+            <div class="desc-section">
+                <span class="category-type">HTML</span>
+                <span class="category-number">90%</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <div class="image-section">
+                <img src="images/g2.png" alt="">
+            </div>
+            <div class="desc-section">
+                <span class="category-type">CSS</span>
+                <span class="category-number">70%</span>
+            </div>
+        </div>
+        <div class="skills-category">
+            <div class="image-section">
+                <img src="images/g1.png" alt="">
+            </div>
+            <div class="desc-section">
+                <span class="category-type">JS</span>
+                <span class="category-number">60%</span>
+            </div>
+        </div>
+        <div class="skills-category">
+            <div class="image-section">
+                <img src="images/g1.png" alt="">
+            </div>
+            <div class="desc-section">
+                <span class="category-type">PHP</span>
+                <span class="category-number">60%</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <div class="image-section">
+                <img src="images/g1.png" alt="">
+            </div>
+            <div class="desc-section">
+                <span class="category-type">REACT</span>
+                <span class="category-number">60%</span>
+            </div>
+        </div>
+
+        <div class="skills-category">
+            <div class="image-section">
+                <img src="images/g1.png" alt="">
+            </div>
+            <div class="desc-section">
+                <span class="category-type">MYSQL</span>
+                <span class="category-number">80%</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ************************************* -->
+
+
+<!-- text ****************************** -->
+<main>
+    <section id="first-text">
+        <div class="container">
+            <h2>Who am I</h2>
+            <div class="row">
+                <div class="about-left1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, nihil commodi dolore temporibus voluptatibus, animi minus, alias aliquam consectetur sint debitis quam cupiditate aspernatur dolores adipisci obcaecati quaerat incidunt porro?</p>
+                </div>
+                <div class="about-right1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum sapiente est. Debitis aliquam ullam voluptatum accusamus aut impedit architecto temporibus labore vero tempora? Necessitatibus illum alias provident autem quasi. </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -249,12 +271,13 @@
                 </div>
             </div>
         </div>
+        <button class="top-btn" onclick="scrollToTop()">Back to Top</button>
 </section>
 <!-- *************************************** -->
 
 
-<button class="top-btn" onclick="scrollToTop()">Back to Top</button>
 
+</main>
 <!-- Footer ************************** -->
 <!-- ************************************* -->
 <section class="footer" id="footer">
@@ -275,12 +298,8 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
     </div>
-
 </section>
-<div class="copyright">
-    <p>All Right Reserved.</p>
-</div>
-</main>
+
 
 
 
@@ -298,7 +317,7 @@
         sideMenu.style.right = '-200px';
     }
 </script>
-<script src="script.js"></script>
+<script src="script2.js"></script>
 
 </body>
 </html>
