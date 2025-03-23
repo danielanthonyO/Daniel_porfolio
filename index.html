@@ -5,60 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>Professional Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- header ********************************************** -->
-    <header class="header" id="header">
+<!--  header  -->
+<header class="header">
+    <div class="container">
         <nav>
-            <div class="logo"><h2>LOGO</h2></div>
-            <div class="theme-toggle" onclick="toggleTheme()">
+        <h1 class="logo">DANIEL.</h1> 
+    <div class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon"></i>
-            </div>
-            <ul class="menuList">
-                <li><a href="#">About</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+            </div> 
+            <ul id="sideMenu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
-            <div class="menu-bars">
-                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-            </div>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
         </nav>
+    </div>
 
 
-<!-- /*Hero Section **********************************/ -->
+
+<!-- *Hero Section  -->
 <div class="hero">
-    <div>
-        <h1>Frontend <br><span>Developer</span> & Mentor</h1>
-    </div>
-    <div>
-        <p>I design and code beautifully simple things, and I love what I do.</p>
-    </div>
-    <div class="btn-container">
-        <a href="#" class="btn2" id="openModal">Read more</a>
-    </div>
+<div class="container">
+<div class="hero-head">
+    <h3>Frontend</h3>
+    <h1><span>Developer </span></h1>
+    <h3 class="qa">QA & Automation Enthusiast</h3>
+
+</div>
+<div class="hero-content">
+    <p>I design and code beautifully simple things, and I love what I do. </p>
+</div>
+<div class="btn-container">
+    <a href="#" class="btn2 " id="openModal">Read more</a>
+</div>
+</div>
 </div>
 
-<!-- Modal Structure -->
+<!-- /* Modal Structure / -->
 <div id="modalOverlay" class="modal-overlay">
-    <div class="modal">
-        <span class="close-btn">&times;</span>
-        <h2>More Projects</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate officiis vitae consequatur iusto voluptates odit facere, temporibus! Dicta libero quam iste accusantium fugiat incidunt temporibus?</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi unde ipsam molestias dignissimos? Dolores, illum suscipit eos vitae consectetur. Nisi id sint pariatur in autem delectus numquam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae nemo aut officiis magni, laudantium esse corporis laborum, eos molestias at explicabo alias obcaecati nulla? Omnis sint ab consectetur.</p>
-    </div>
+<div class="modal">
+<span class="close-btn">&times;</span>
+
+<h2>More Projects</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate officiis vitae consequatur iusto voluptates odit facere, temporibus! Dicta libero quam iste accusantium fugiat incidunt temporibus?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi unde ipsam molestias dignissimos? Dolores, illum suscipit eos vitae consectetur. Nisi id sint pariatur in autem delectus numquam.</p>
+
+</div>
 </div>
 </header>
 
 
-
-<!-- <div id="about"> **********************-->
-    <!-- About*************************** -->
+<!-- About"> *** -->
 <section id="about">
     <div class="container">
         <div id="about-line">
@@ -70,225 +76,174 @@
             <div class="right-col">
                 <p></p>
                 <p> I am Anthony Daniel, a Frontend Developer.  </p>
-                <p>I am passionate about designing and coding beautifully simple things, I love what I do. I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products. Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </p>
-                <p>I am quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>I am passionate about designing and coding beautifully simple things, I am open to remote work, I I love what I do. I have consulted for startups, and collaborated with talented people to create digital products.  </p>
+                <p>I am quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. </p>
                 
-                <button class="btn2 btn3">Download Resume</button>
+                <button class="btn3">Download Resume</button>
             </div>
                 <div class="left-col">
                     <picture><img src="images/pics2.png" alt=""></picture>
                 </div>
         </div>
     </div>
+</section> 
+
+
+
+<!-- porfolio **-->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div id="about-line">
+            <span class="blue-line"></span>   
+            <span class="blue-line-heading">Projects</span>
+        </div>
+        <p>Here are a few past design projects I've worked on. Want to see more? Email me.</p>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/g1.png" alt="">
+                <div class="layer">
+                    <h3>Little zoo app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/g2.png" alt="">
+                <div class="layer">
+                    <h3>Porfolio website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/g1.png" alt="">
+                <div class="layer">
+                    <h3>Pancake maker</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn2">See More</a>
+</div>
 </section>
-<!-- ***************************************** -->
+
+</section> 
 
 
 
-    <!-- porfolio ***********************-->
-    <!-- ******************************** -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div id="about-line">
-                <span class="blue-line"></span>   
-                <span class="blue-line-heading">Projects</span>
-            </div>
-            <p>Here are a few past design projects I've worked on. Want to see more? Email me.</p>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/g1.png" alt="">
-                    <div class="layer">
-                        <h3>Social media app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/g2.png" alt="">
-                    <div class="layer">
-                        <h3>Social media app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/g1.png" alt="">
-                    <div class="layer">
-                        <h3>Social media app</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn2">See More</a>
-    </div>
-    </section>
 
-    <section class="cards-section">
-        <div class="card">
-            <img src="pancake.png" alt="Project 1">
-            <div class="card-content">
-                <h3>Pancake</h3>
-                <p>Brief description of the project goes here.</p>
-                <button>See More</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="pancake.png" alt="Project 2">
-            <div class="card-content">
-                <h3>Little zoo</h3>
-                <p>Brief description of the project goes here.</p>
-                <button>See More</button>
-            </div>
-        </div>
-        <div class="card">
-            <img src="pancake.png" alt="Project 3">
-            <div class="card-content">
-                <h3>Project Three</h3>
-                <p>Brief description of the project goes here.</p>
-                <button>See More</button>
-            </div>
-        </div>
-
-    </section>
-
-
-
-<!-- skills session *************** --> 
-<!-- ******************************** -->
+<!-- skills session * -->
 <div id="skills">
-    <div id="skills-line">
-        <span class="blue-line"></span>   
-        <span class="blue-line-heading">Core Skills</span>
+<div id="skills-line">
+    <span class="blue-line"></span>   
+    <span class="blue-line-heading">Core Skills</span>
+</div>
+
+<div id="wrapper">
+<div class="skills-category">
+    <div class="image-section">
+        <img src="images/g1.png" alt="">
+        </div>
+        <div class="desc-section">
+            <span class="category-type">HTML</span>
+            <span class="category-number">90%</span>
+        </div>
     </div>
 
-    <div id="wrapper">
+    <div class="skills-category">
+        <div class="image-section">
+            <img src="images/g2.png" alt="">
+        </div>
+        <div class="desc-section">
+            <span class="category-type">CSS</span>
+            <span class="category-number">70%</span>
+        </div>
+    </div>
     <div class="skills-category">
         <div class="image-section">
             <img src="images/g1.png" alt="">
-            </div>
-            <div class="desc-section">
-                <span class="category-type">HTML</span>
-                <span class="category-number">90%</span>
-            </div>
         </div>
+        <div class="desc-section">
+            <span class="category-type">JS</span>
+            <span class="category-number">60%</span>
+        </div>
+    </div>
+    <div class="skills-category">
+        <div class="image-section">
+            <img src="images/g1.png" alt="">
+        </div>
+        <div class="desc-section">
+            <span class="category-type">PHP</span>
+            <span class="category-number">60%</span>
+        </div>
+    </div>
 
-        <div class="skills-category">
-            <div class="image-section">
-                <img src="images/g2.png" alt="">
-            </div>
-            <div class="desc-section">
-                <span class="category-type">CSS</span>
-                <span class="category-number">70%</span>
-            </div>
+    <div class="skills-category">
+        <div class="image-section">
+            <img src="images/g1.png" alt="">
         </div>
-        <div class="skills-category">
-            <div class="image-section">
-                <img src="images/g1.png" alt="">
-            </div>
-            <div class="desc-section">
-                <span class="category-type">JS</span>
-                <span class="category-number">60%</span>
-            </div>
+        <div class="desc-section">
+            <span class="category-type">REACT</span>
+            <span class="category-number">60%</span>
         </div>
-        <div class="skills-category">
-            <div class="image-section">
-                <img src="images/g1.png" alt="">
-            </div>
-            <div class="desc-section">
-                <span class="category-type">PHP</span>
-                <span class="category-number">60%</span>
-            </div>
-        </div>
+    </div>
 
-        <div class="skills-category">
-            <div class="image-section">
-                <img src="images/g1.png" alt="">
-            </div>
-            <div class="desc-section">
-                <span class="category-type">REACT</span>
-                <span class="category-number">60%</span>
-            </div>
+    <div class="skills-category">
+        <div class="image-section">
+            <img src="images/g1.png" alt="">
         </div>
-
-        <div class="skills-category">
-            <div class="image-section">
-                <img src="images/g1.png" alt="">
-            </div>
-            <div class="desc-section">
-                <span class="category-type">MYSQL</span>
-                <span class="category-number">80%</span>
-            </div>
+        <div class="desc-section">
+            <span class="category-type">MYSQL</span>
+            <span class="category-number">80%</span>
         </div>
     </div>
 </div>
-<!-- ************************************* -->
+</div> 
 
 
-<!-- text ****************************** -->
-<main>
-    <section id="first-text">
-        <div class="container">
-            <h2>Who am I</h2>
-            <div class="row">
-                <div class="about-left1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, nihil commodi dolore temporibus voluptatibus, animi minus, alias aliquam consectetur sint debitis quam cupiditate aspernatur dolores adipisci obcaecati quaerat incidunt porro?</p>
+<div class="text">
+<section class="text-section">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, nihil commodi dolore temporibus voluptatibus, animi minus, alias aliquam consectetur sint debitis quam cupiditate aspernatur dolores adipisci obcaecati quaerat incidunt porro? Lorem ipsum, dolor sit amet consectetur adipisicing elit. !</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quasi excepturi recusandae nam suscipit ullam consequatur, minima cum repellendus blanditiis esse! Minima eos hic modi doloribus quo tempore voluptates labore. </p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem rem eos, voluptate mollitia eligendi! Necessitatibus molestias voluptas consequuntur provident dolore, nostrum iusto fugiat iure, sunt, sequi qui deleniti laudantium?</p>
+</section> 
+</div>
+
+
+<footer>
+<button id="back-to-top" class="top-btn">⬆ Back to Top</button>
+
+<!-- contact section *-->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i> contact@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 046842334</p>
+                <div class="social-icons">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
                 </div>
-                <div class="about-right1">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum sapiente est. Debitis aliquam ullam voluptatum accusamus aut impedit architecto temporibus labore vero tempora? Necessitatibus illum alias provident autem quasi. </p>
-                </div>
+                <a href="Resume/anthonyCV.pdf" download class="btn2 btn3">Download Resume</a>
             </div>
-        </div>
-    </section>
-
-
-
-    <!-- contact section **********************-->
-    <!-- ************************************'' -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fas fa-paper-plane"></i> contact@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 046842334</p>
-                    <div class="social-icons">
-                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <a href="Resume/anthonyCV.pdf" download class="btn2 btn3">Download Resume</a>
-                </div>
-                
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name='Name' class="field" placeholder="Your Name" required>
-                        <input type="email" name="Email" class="field" placeholder="Your Email" required>
-                        <input type="text" name="Phone" class="field" placeholder="Your Phone" required>
-                        <textarea name="Message" rows="6" placeholder="Message" class="field"></textarea>
-                        <button type="submit" name="Submit" class="btn2 btn3">Send</button>
-                    </form>
-                </div>
+            
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name='Name' class="field" placeholder="Your Name" required>
+                    <input type="email" name="Email" class="field" placeholder="Your Email" required>
+                    <input type="text" name="Phone" class="field" placeholder="Your Phone" required>
+                    <textarea name="Message" rows="6" placeholder="Message" class="field"></textarea>
+                    <button type="submit" name="Submit" class="btn2 btn3">Send</button>
+                </form>
             </div>
-        </div>
-        <button class="top-btn" onclick="scrollToTop()">Back to Top</button>
-</section>
-<!-- *************************************** -->
-
-
-
-</main>
-<!-- Footer ************************** -->
-<!-- ************************************* -->
-<section class="footer" id="footer">
-    <div class="footer-box">
-        <h2>Daniel. <span>O.</span></h2>
-        <div class="social">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
         </div>
     </div>
+</section>
+
+<div class="last">
     <div class="footer-box">
         <h3>Frontend Developer</h3>
     </div>
@@ -298,26 +253,9 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Gallery</a></li>
     </div>
-</section>
+</div>
+</footer>
 
-
-
-
-
-
-<script>
-    const sideMenu = document.getElementById('sideMenu');
-    const menuBars = document.getElementById('menu-bars');
-    const menuClose = document.getElementById('menu-close');
-
-    function openMenu() {
-        sideMenu.style.right = '0';
-    }
-    function closeMenu() {
-        sideMenu.style.right = '-200px';
-    }
-</script>
-<script src="script2.js"></script>
-
+<script src="trying.js"></script>
 </body>
 </html>
