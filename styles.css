@@ -499,7 +499,6 @@ img {
     padding: 20px;
     height: 100%;
     flex-grow: 1;
-    color: red;
 }
 .desc-section .category-type {
     color: var(--text-color);
@@ -523,7 +522,7 @@ img {
 .text-section {
     padding: 20px;
     margin: 1px auto;
-    width: 70%;
+    width: 100%;
 }
 .text-section p {
     line-height: 1.5;
@@ -767,6 +766,10 @@ footer {
         }
         .desc-section{
             width: auto;
+        }
+
+        .text-section {
+            width: 90%;
         }
 }
 
