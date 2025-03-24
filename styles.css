@@ -408,7 +408,7 @@ img {
         border-radius: 50%;
         display: block;
         text-align: center;
-        background-color: red;
+ 
     }
     .work:hover img {
         transform: scale(1.1);
@@ -461,7 +461,7 @@ img {
     margin-top: 2rem;
 }
 .skills-category {
-    width: 350px;
+    width: 250px;
     height: 100px;
     overflow: hidden;
     display: flex;
@@ -499,6 +499,7 @@ img {
     padding: 20px;
     height: 100%;
     flex-grow: 1;
+    color: red;
 }
 .desc-section .category-type {
     color: var(--text-color);
@@ -761,7 +762,12 @@ footer {
             margin: 20px;
         }
 
-
+        #wrapper{
+            max-width: 70%;
+        }
+        .desc-section{
+            width: auto;
+        }
 }
 
 
