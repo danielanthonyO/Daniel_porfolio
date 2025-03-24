@@ -1,90 +1,85 @@
-const bar = document.getElementById('bar');
-const menu = document.getElementById('menu');
 
-if(bar){
-    bar.addEventListener('click', () =>{
-        menu.classList.toggle('active');
-    })}
+// toggle
+const sideMenu = document.getElementById('sideMenu');
 
-
-// scripts for recent job heading
-const sortBtns = document.querySelectorAll(".job-id > * ")
-// scripts for sorting on click jobs
-const sortItems = document.querySelectorAll(".jobs-container > *")
-
-sortBtns.forEach((btn) =>{
-    btn.addEventListener('click', () =>{
-        sortBtns.forEach((btn) => btn.classList.remove("active"))
-        btn.classList.add("active")
-
-        // scripts for sorting on click jobs (delete in css)
-        const targetData = btn.getAttribute("data-target")
-        sortItems.forEach((item) =>{
-            item.classList.add("delete")
-            
-            if(item.getAttribute("data-item") === 
-            targetData || targetData === "all"){
-                item.classList.remove("delete");
-            }
-        })
-    })
-})
-
-
-const themeToggle = document.getElementById("theme-toggle");
-const body = document.body;
-
-// Load theme from localStorage
-if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-theme");
-    themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+function openMenu(){
+    sideMenu.style.right = '0';
 }
 
-// Toggle Theme
-themeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-theme");
-    
-    // Save theme preference
-    if (body.classList.contains("dark-theme")) {
-        localStorage.setItem("theme", "dark");
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-    } else {
-        localStorage.setItem("theme", "light");
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+function closeMenu(){
+    sideMenu.style.right = '-200px';
+}
+
+
+// menu list 
+function toggleMenu() {
+    let menuList = document.querySelector('.menuList');
+    if (window.innerWidth <= 690) { 
+        menuList.style.display = menuList.style.display === 'flex' ? 'none' : 'flex';
     }
-});
+}
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const openModalBtn = document.getElementById("openModal");
+
+// dark theme
+function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+    let themeIcon = document.querySelector('.theme-toggle i');
+    themeIcon.classList.toggle('fa-sun');
+    themeIcon.classList.toggle('fa-moon');
+}
+
+
+
+// modal 
+document.addEventListener("DOMContentLoaded", function () {
     const modalOverlay = document.getElementById("modalOverlay");
+    const openModalBtn = document.getElementById("openModal");
     const closeModalBtn = document.querySelector(".close-btn");
 
-    // Open Modal
-    openModalBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+    function closeModal() {
+        modalOverlay.style.display = "none";
+    }
+
+
+    openModalBtn.addEventListener("click", function (event) {
+        event.preventDefault(); 
         modalOverlay.style.display = "flex";
     });
 
-    // Close Modal
-    closeModalBtn.addEventListener("click", () => {
-        modalOverlay.style.display = "none";
+ 
+    closeModalBtn.addEventListener("click", closeModal);
+
+ 
+    modalOverlay.addEventListener("click", function (event) {
+        if (event.target === modalOverlay) {
+            closeModal();
+        }
     });
 
-    // Close when clicking outside the modal
-    modalOverlay.addEventListener("click", (e) => {
-        if (e.target === modalOverlay) {
-            modalOverlay.style.display = "none";
+ 
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeModal();
         }
     });
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const backToTop = document.querySelector("#back-to-top");
 
- // Smooth Back to Top
- window.onscroll = () => {
-    document.querySelector('.top-btn').style.display = window.scrollY > 500 ? 'block' : 'none';
-};
-function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
+    if (!backToTop) return; 
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 1800) {
+            backToTop.style.display = "block";
+        } else {
+            backToTop.style.display = "none";
+        }
+    });
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
