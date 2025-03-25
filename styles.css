@@ -34,6 +34,7 @@
     --btn-hover: #ffd100;
     --span-color: #333;
 }
+
 /* semantics **/
 html {
     font-size: 18px;
@@ -64,6 +65,7 @@ section{
     min-height: 45vh;
     background-color: var(--tertiary-color);
 }
+
 .container{
     padding: 15px 14%;
 }
@@ -82,6 +84,7 @@ section{
     transform: scale(1.1);
     color: var(--text-color);
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -98,7 +101,6 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: var(--logo-color);
     color: var(--text-color);
     font-size: 18px;
     font-size: 1.1rem;
@@ -125,6 +127,7 @@ nav ul li a:hover::after{
     font-size: 24px;
     cursor: pointer;
 }
+
 /* light and dark */
 .theme-toggle {
     position: absolute;
@@ -210,6 +213,7 @@ nav ul li a:hover::after{
     animation: fadeIn 0.3s ease-in-out;
     width: 500px;
     height: 400px;
+    background-color: #fff;
 }
 .modal p {
     margin-top: 20px;
