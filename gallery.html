@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gallery.css">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
 </head>
 <body>
-    <header class="header" id="header">
+<div class="gallery-body">
+    <header class="header">
         <div class="container">
             <nav>
-            <img src="images/logo2.png" class="logo" alt="">
-            <ul id="sideMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fas fa-times" onclick="closeMenu()" id="menu-close"></i>
-            </ul>
-            <i class="fas fa-bars" onclick="openMenu()" id="menu-bars"></i>
-        </nav>
+                <h1 class="logo">DANIEL.</h1> 
+                <div class="theme-toggle" onclick="toggleTheme()">
+                    <i class="fa-solid fa-moon"></i>
+                </div> 
+                <ul id="sideMenu">
+                </ul>
+                <li class="gallery-link"><a href="index.html">Home</a></li>
+                <button class="theme-toggle-btn" onclick="toggleTheme()">Toggle Mode</button>
+            </nav>
         </div>
-</header>
-<main>
-    <section>
-        <h2>it is good</h2>
-    </section>
-</main>
+
+        <main class="gallery-main">
+            <div class="gallery-wrap">
+                <div class="gallery-header"><h2>Image Gallery</h2></div>
+                    <div class="gallery-container">
+                        <div class="image img1">
+                            <img src="images/image5.jpg" alt="Image 1" /></div>
+                        <div class="image img2">
+                            <img src="images/image1.jpg" alt="Image 2" /></div>
+                        <div class="image img3">
+                            <img src="images/image2.jpg" alt="Image 3" /></div>
+                        <div class="image img4">
+                            <img src="images/image3.jpg" alt="Image 4" /></div>
+                        <div class="image img5">
+                            <img src="images/image4.jpg" alt="Image 5" /></div>
+                        <div class="image img6">
+                            <img src="images/image9.jpg" alt="Image 6" /></div>
+                        <div class="image img7">
+                            <img src="images/image6.jpg" alt="Image 7" /></div>
+                        <div class="image img8">
+                            <img src="images/image7.jpg" alt="Image 8" /></div>
+                        <div class="image img9">
+                            <img src="images/image8.jpg" alt="Image 9" />
+                        </div>
+                    </div>
+                </div>
+            </main>
+</div>
+
+<div class="footer">
+    <button id="back-to-top" class="top-btn">⬆ Back to Top</button>
+    <div class="last">
+        <div class="footer-box">
+            <h3>Frontend Developer</h3>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+
+        </div>
+    </div>
+</div class='footer'>
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
