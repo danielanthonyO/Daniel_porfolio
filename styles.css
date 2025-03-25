@@ -713,6 +713,9 @@ nav .fas {
             background-color: var(--logo-color);
             /* border: 3px solid var(--btn-bg); */
         }
+        .modal {
+            background-color: #fff;
+        }
     }
 
     #contact{
