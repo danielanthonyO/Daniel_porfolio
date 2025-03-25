@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Professional Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,12 +15,12 @@
     <div class="container">
         <nav>
         <h1 class="logo">DANIEL.</h1> 
-    <div class="theme-toggle" onclick="toggleTheme()">
+        <div class="theme-toggle" onclick="toggleTheme()">
                 <i class="fa-solid fa-moon"></i>
             </div> 
             <ul id="sideMenu">
                 <li><a href="#about">About</a></li>
-                <li><a href="">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closeMenu()"></i>
@@ -32,7 +32,7 @@
 
 
 <!-- *Hero Section  -->
-<div class="hero">
+<div class="hero" id="hero">
 <div class="container">
 <div class="hero-head">
     <h3>Frontend</h3>
@@ -100,7 +100,7 @@
         <p>Here are a few past design projects I've worked on. Want to see more? Email me.</p>
         <div class="work-list">
             <div class="work">
-                <img src="images/g1.png" alt="">
+                <img src="images/zoo.jpg" alt="">
                 <div class="layer">
                     <h3>Little zoo app</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/g2.png" alt="">
+                <img src="images/porfolio.jpg" alt="">
                 <div class="layer">
                     <h3>Porfolio website</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/g1.png" alt="">
+                <img src="images/pancake.jpg" alt="">
                 <div class="layer">
                     <h3>Pancake maker</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.</p>
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn2">See More</a>
+        <a href="gallery.html" class="btn2">See More</a>
 </div>
 </section>
 
@@ -144,7 +144,7 @@
 <div id="wrapper">
 <div class="skills-category">
     <div class="image-section">
-        <img src="images/g1.png" alt="">
+        <img src="images/html.jpg" alt="">
         </div>
         <div class="desc-section">
             <span class="category-type">HTML</span>
@@ -154,7 +154,7 @@
 
     <div class="skills-category">
         <div class="image-section">
-            <img src="images/g2.png" alt="">
+            <img src="images/css.jpg" alt="">
         </div>
         <div class="desc-section">
             <span class="category-type">CSS</span>
@@ -163,7 +163,7 @@
     </div>
     <div class="skills-category">
         <div class="image-section">
-            <img src="images/g1.png" alt="">
+            <img src="images/js.jpg" alt="">
         </div>
         <div class="desc-section">
             <span class="category-type">JS</span>
@@ -172,7 +172,7 @@
     </div>
     <div class="skills-category">
         <div class="image-section">
-            <img src="images/g1.png" alt="">
+            <img src="images/php.jpg" alt="">
         </div>
         <div class="desc-section">
             <span class="category-type">PHP</span>
@@ -182,7 +182,7 @@
 
     <div class="skills-category">
         <div class="image-section">
-            <img src="images/g1.png" alt="">
+            <img src="images/react.jpg" alt="">
         </div>
         <div class="desc-section">
             <span class="category-type">REACT</span>
@@ -192,7 +192,7 @@
 
     <div class="skills-category">
         <div class="image-section">
-            <img src="images/g1.png" alt="">
+            <img src="images/sql.jpg" alt="">
         </div>
         <div class="desc-section">
             <span class="category-type">MYSQL</span>
@@ -257,7 +257,6 @@
     </div>
 </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
